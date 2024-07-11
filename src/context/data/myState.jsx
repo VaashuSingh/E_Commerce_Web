@@ -7,15 +7,16 @@ const MyState = (props) => {
   const toggleMode = () => {
     if (mode === "light") {
       setMode("dark");
-      document.body.style.backgroundColor = "rgb(17,24,39)";
+      document.body.style.backgroundColor = "rgb(17, 24, 39)";
     } else {
       setMode("light");
       document.body.style.backgroundColor = "white";
     }
+    return;
   };
 
   return (
-    <MyContext.Provider value={(mode, toggleMode)}>
+    <MyContext.Provider value={{ mode, toggleMode }}>
       {props.children}
     </MyContext.Provider>
   );
