@@ -1,3 +1,5 @@
+import productImg_1 from "./../assets/img/image-1.jpg";
+
 const filtersItems = [
   {
     value: 1001,
@@ -35,4 +37,88 @@ const filtersPrice = [
     label: "400",
   },
 ];
-export { filtersItems, filtersPrice };
+
+const productsCardCollection = [
+  {
+    id: 1,
+    name: "Jacket",
+    desc: "Jacket",
+    price: 100,
+    image: productImg_1,
+    mrp: 200,
+    disc: "10 %",
+    rating: 4.5,
+  },
+  {
+    id: 1,
+    name: "Jacket",
+    desc: "Jacket",
+    price: 100,
+    image: productImg_1,
+    mrp: 200,
+    disc: "10 %",
+    rating: 4.5,
+  },
+  {
+    id: 1,
+    name: "Jacket",
+    desc: "Jacket",
+    price: 100,
+    image: productImg_1,
+    mrp: 200,
+    disc: "10 %",
+    rating: 4.5,
+  },
+  {
+    id: 1,
+    name: "Jacket",
+    desc: "Jacket",
+    price: 100,
+    image: productImg_1,
+    mrp: 200,
+    disc: "10 %",
+    rating: 4.5,
+  },
+  {
+    id: 1,
+    name: "Jacket",
+    desc: "Jacket",
+    price: 100,
+    image: productImg_1,
+    mrp: 200,
+    disc: "10 %",
+    rating: 4.5,
+  },
+  {
+    id: 1,
+    name: "Jacket",
+    desc: "Jacket",
+    price: 100,
+    image: productImg_1,
+    mrp: 200,
+    disc: "10 %",
+    rating: 4.5,
+  },
+  {
+    id: 1,
+    name: "Jacket",
+    desc: "Jacket",
+    price: 100,
+    image: productImg_1,
+    mrp: 200,
+    disc: "10 %",
+    rating: 4.5,
+  },
+  {
+    id: 1,
+    name: "Jacket",
+    desc: "Jacket",
+    price: 100,
+    image: productImg_1,
+    mrp: 200,
+    disc: "10 %",
+    rating: 4.5,
+  },
+];
+
+export { filtersItems, filtersPrice, productsCardCollection };

@@ -6,8 +6,15 @@ import { filtersPrice, filtersItems } from "../../constants";
 function FilterSection() {
   const [optItems, setOptItems] = useState(filtersItems);
   const [optPrices, setOptPrices] = useState(filtersPrice);
+  const [selectedItems, setSelectedItems] = useState([]);
+  const [selectedPrices, setSelectedPrices] = useState([]);
   const context = useContext(myContext);
   const { mode } = context;
+
+  const resetfilters = () => {
+    setSelectedItems([]);
+    setSelectedPrices([]);
+  };
 
   return (
     <div>
@@ -47,6 +54,7 @@ function FilterSection() {
             <button
               className="px-4 py-2 bg-gray-50hover:bg-gray-200 text-gray-800 text-sm font-medium rounded-md"
               style={{ color: mode === "dark" ? "white" : "" }}
+              onClick={resetfilters}
             >
               Reset Filter
             </button>
@@ -66,7 +74,9 @@ function FilterSection() {
                   }`}
                   classNamePrefix="my-react-select"
                   options={optItems}
+                  value={selectedItems}
                   placeholder="Select Items"
+                  onChange={(e) => setSelectedItems(e)}
                 />
               </div>
               <div
@@ -82,7 +92,9 @@ function FilterSection() {
                   }`}
                   classNamePrefix="my-react-select"
                   options={optPrices}
+                  value={selectedPrices}
                   placeholder="Select Price"
+                  onChange={(e) => setSelectedPrices(e)}
                 />
               </div>
             </div>
