@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // react-router-dom
 import Home from "./pages/home/Home";
-import MyState from "./context/data/myState";
 import Order from "./pages/order/Order";
 import Cart from "./pages/cart/Cart";
 import Admin from "./pages/admin/Admin";
 import AllProducts from "./pages/products/allproducts";
+import { ThemeProvider } from "./context/theme/ThemeProvider";
 
 function App() {
   return (
-    <MyState>
+    <ThemeProvider>
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -18,7 +18,7 @@ function App() {
           <Route exect path="/cart" element={<Cart />} />
         </Routes>
       </Router>
-    </MyState>
+    </ThemeProvider>
   );
 }
 

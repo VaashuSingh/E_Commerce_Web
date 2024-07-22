@@ -1,16 +1,15 @@
-import { Fragment, useContext, useState } from "react";
+import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { BsFillCloudSunFill } from "react-icons/bs";
 import { FiSun } from "react-icons/fi";
-import myContext from "../../context/data/myContext";
 import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../context/theme/ThemeProvider";
+// import MyContext from "../../context/data/MyContext";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-
-  const context = useContext(myContext);
-  const { mode, toggleMode } = context;
+  const { isDarkMode, toggleDarkMode } = useTheme();
 
   return (
     <div className="bg-white sticky top-0 z-50  ">
@@ -41,10 +40,12 @@ const Navbar = () => {
             >
               <Dialog.Panel
                 className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl"
-                style={{
-                  backgroundColor: mode === "dark" ? "rgb(40, 44, 52)" : "",
-                  color: mode === "dark" ? "white" : "",
-                }}
+                style={
+                  {
+                    // backgroundColor: mode ? "rgb(40, 44, 52)" : "",
+                    // color: mode ? "white" : "",
+                  }
+                }
               >
                 <div className="flex px-4 pb-2 pt-28">
                   <button
@@ -60,14 +61,14 @@ const Navbar = () => {
                   <Link
                     to={"/allproducts"}
                     className="text-sm font-medium text-gray-900 "
-                    style={{ color: mode === "dark" ? "white" : "" }}
+                    // style={{ color: mode ? "white" : "" }}
                   >
                     All Products
                   </Link>
                   <div className="flow-root">
                     <Link
                       to={"/order"}
-                      style={{ color: mode === "dark" ? "white" : "" }}
+                      // style={{ color: mode ? "white" : "" }}
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
                       Order
@@ -78,7 +79,7 @@ const Navbar = () => {
                     <Link
                       to={"/dashboard"}
                       className="-m-2 block p-2 font-medium text-gray-900"
-                      style={{ color: mode === "dark" ? "white" : "" }}
+                      // style={{ color: mode ? "white" : "" }}
                     >
                       admin
                     </Link>
@@ -87,7 +88,7 @@ const Navbar = () => {
                   <div className="flow-root">
                     <a
                       className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer"
-                      style={{ color: mode === "dark" ? "white" : "" }}
+                      // style={{ color: mode ? "white" : "" }}
                     >
                       Logout
                     </a>
@@ -115,7 +116,7 @@ const Navbar = () => {
                     />
                     <span
                       className="ml-3 block text-base font-medium text-gray-900"
-                      style={{ color: mode === "dark" ? "white" : "" }}
+                      // style={{ color: mode === "dark" ? "white" : "" }}
                     >
                       INDIA
                     </span>
@@ -130,34 +131,20 @@ const Navbar = () => {
 
       {/* desktop  */}
       <header className="relative bg-white">
-        <p
-          className="flex h-10 items-center justify-center bg-pink-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8"
-          style={{
-            backgroundColor: mode === "dark" ? "rgb(62 64 66)" : "",
-            color: mode === "dark" ? "white" : "",
-          }}
-        >
+        <p className="flex h-10 items-center justify-center bg-pink-600 px-4 text-sm text-white font-medium sm:px-6 lg:px-8 dark-mode-3">
           Get free delivery on orders over ₹300
         </p>
 
         <nav
           aria-label="Top"
-          className="bg-gray-100 px-4 sm:px-6 lg:px-8 shadow-xl "
-          style={{
-            backgroundColor: mode === "dark" ? "#282c34" : "",
-            color: mode === "dark" ? "white" : "",
-          }}
+          className="bg-gray-100 px-4 sm:px-6 lg:px-8 shadow-xl light-mode dark-mode-1"
         >
           <div className="">
             <div className="flex h-16 items-center">
               <button
                 type="button"
-                className="rounded-md bg-white p-2 text-gray-400 lg:hidden"
+                className="rounded-md bg-white p-2 text-gray-400 lg:hidden dark-mode-2"
                 onClick={() => setOpen(true)}
-                style={{
-                  backgroundColor: mode === "dark" ? "rgb(80 82 87)" : "",
-                  color: mode === "dark" ? "white" : "",
-                }}
               >
                 <span className="sr-only">Open menu</span>
                 {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -169,10 +156,7 @@ const Navbar = () => {
               <div className="ml-4 flex lg:ml-0">
                 <Link to={"/"} className="flex">
                   <div className="flex ">
-                    <h1
-                      className=" text-2xl font-bold text-black  px-2 py-1 rounded"
-                      style={{ color: mode === "dark" ? "white" : "" }}
-                    >
+                    <h1 className=" text-2xl font-bold text-black px-2 py-1 rounded light-mode-1">
                       E-Bharat
                     </h1>
                   </div>
@@ -183,30 +167,24 @@ const Navbar = () => {
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                   <Link
                     to={"/allproducts"}
-                    className="text-sm font-medium text-gray-700 "
-                    style={{ color: mode === "dark" ? "white" : "" }}
+                    className="text-sm font-medium text-gray-700 light-mode-1"
                   >
                     All Products
                   </Link>
                   <Link
                     to={"/order"}
-                    className="text-sm font-medium text-gray-700 "
-                    style={{ color: mode === "dark" ? "white" : "" }}
+                    className="text-sm font-medium text-gray-700 light-mode-1"
                   >
                     Order
                   </Link>
                   <Link
                     to={"/dashboard"}
-                    className="text-sm font-medium text-gray-700 "
-                    style={{ color: mode === "dark" ? "white" : "" }}
+                    className="text-sm font-medium text-gray-700 light-mode-1"
                   >
                     Admin
                   </Link>
 
-                  <a
-                    className="text-sm font-medium text-gray-700 cursor-pointer  "
-                    style={{ color: mode === "dark" ? "white" : "" }}
-                  >
+                  <a className="text-sm font-medium text-gray-700 cursor-pointer light-mode-1">
                     Logout
                   </a>
                 </div>
@@ -218,10 +196,7 @@ const Navbar = () => {
                       alt=""
                       className="block h-auto w-5 flex-shrink-0"
                     />
-                    <span
-                      className="ml-3 block text-sm font-medium"
-                      style={{ color: mode === "dark" ? "white" : "" }}
-                    >
+                    <span className="ml-3 block text-sm font-medium light-mode-1">
                       INDIA
                     </span>
                   </a>
@@ -238,9 +213,9 @@ const Navbar = () => {
 
                 {/* Search */}
                 <div className="flex lg:ml-6">
-                  <button className="btn" onClick={toggleMode}>
-                    {mode === "light" ? (
-                      <FiSun className="" size={30} />
+                  <button className="btn" onClick={toggleDarkMode}>
+                    {isDarkMode ? (
+                      <FiSun size={30} />
                     ) : (
                       <BsFillCloudSunFill size={30} />
                     )}
@@ -251,8 +226,7 @@ const Navbar = () => {
                 <div className="ml-4 flow-root lg:ml-6">
                   <Link
                     to={"/cart"}
-                    className="group -m-2 flex items-center p-2"
-                    style={{ color: mode === "dark" ? "white" : "" }}
+                    className="group -m-2 flex items-center p-2 light-mode-1"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -269,10 +243,7 @@ const Navbar = () => {
                       />
                     </svg>
 
-                    <span
-                      className="ml-2 text-sm font-medium text-gray-700 group-"
-                      style={{ color: mode === "dark" ? "white" : "" }}
-                    >
+                    <span className="ml-2 text-sm font-medium text-gray-700 light-mode-1">
                       0
                     </span>
                     <span className="sr-only">items in cart, view bag</span>
