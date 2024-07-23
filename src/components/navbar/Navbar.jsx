@@ -38,15 +38,7 @@ const Navbar = () => {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <Dialog.Panel
-                className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl"
-                style={
-                  {
-                    // backgroundColor: mode ? "rgb(40, 44, 52)" : "",
-                    // color: mode ? "white" : "",
-                  }
-                }
-              >
+              <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl dark-mode-4">
                 <div className="flex px-4 pb-2 pt-28">
                   <button
                     type="button"
@@ -60,16 +52,14 @@ const Navbar = () => {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <Link
                     to={"/allproducts"}
-                    className="text-sm font-medium text-gray-900 "
-                    // style={{ color: mode ? "white" : "" }}
+                    className="text-sm font-medium text-gray-900 light-mode-1"
                   >
                     All Products
                   </Link>
                   <div className="flow-root">
                     <Link
                       to={"/order"}
-                      // style={{ color: mode ? "white" : "" }}
-                      className="-m-2 block p-2 font-medium text-gray-900"
+                      className="-m-2 block p-2 font-medium text-gray-900 light-mode-1"
                     >
                       Order
                     </Link>
@@ -78,18 +68,14 @@ const Navbar = () => {
                   <div className="flow-root">
                     <Link
                       to={"/dashboard"}
-                      className="-m-2 block p-2 font-medium text-gray-900"
-                      // style={{ color: mode ? "white" : "" }}
+                      className="-m-2 block p-2 font-medium text-gray-900 light-mode-1"
                     >
                       admin
                     </Link>
                   </div>
 
                   <div className="flow-root">
-                    <a
-                      className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer"
-                      // style={{ color: mode ? "white" : "" }}
-                    >
+                    <a className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer light-mode-1">
                       Logout
                     </a>
                   </div>
@@ -114,10 +100,7 @@ const Navbar = () => {
                       alt=""
                       className="block h-auto w-5 flex-shrink-0"
                     />
-                    <span
-                      className="ml-3 block text-base font-medium text-gray-900"
-                      // style={{ color: mode === "dark" ? "white" : "" }}
-                    >
+                    <span className="ml-3 block text-base font-medium text-gray-900 light-mode-1">
                       INDIA
                     </span>
                     <span className="sr-only">, change currency</span>
