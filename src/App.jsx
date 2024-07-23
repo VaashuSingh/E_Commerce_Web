@@ -3,8 +3,8 @@ import Home from "./pages/home/Home";
 import Order from "./pages/order/Order";
 import Cart from "./pages/cart/Cart";
 import Admin from "./pages/admin/Admin";
-import AllProducts from "./pages/products/allproducts";
 import { ThemeProvider } from "./context/theme/ThemeProvider";
+import AllProducts from "./components/products/allprod";
 
 function App() {
   return (

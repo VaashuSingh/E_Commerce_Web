@@ -1,4 +1,4 @@
-import ProductCard from "./productcard";
+import ProductCard from "./prodcard";
 
 const CollectionSection = () => {
   return (

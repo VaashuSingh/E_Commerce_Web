@@ -1,14 +1,14 @@
+import FilterSection from "../../components/filter/filter";
 import Layout from "../../components/layout/Layout";
-import HeroSection from "./HeroSection";
-import FilterSection from "./FilterSection";
-import CollectionSection from "../products/collectionSection";
-import CarouselSection from "../../components/Carousel/Carousel";
+import CollectionSection from "../../components/products/collsec";
+import HeroSection from "../../components/hero/HeroSection";
+import CarouselSection from "../../components/carousel/Carousel";
 
 const Home = () => {
   return (
     <Layout>
       <CarouselSection />
-      <HeroSection />
+      {/* <HeroSection /> */}
       <FilterSection />
       <CollectionSection />
     </Layout>
