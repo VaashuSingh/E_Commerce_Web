@@ -5,7 +5,7 @@ const ProductCard = () => {
     <div className="flex flex-wrap -m-4">
       {productsCardCollection.map((item, index) => {
         return (
-          <div className="p-4 md:w-1/5  drop-shadow-lg" key={index}>
+          <div className="p-4 lg:w-1/5 md:w-1/4 drop-shadow-lg" key={index}>
             <div className="h-full border-2 hover:shadow-gray-100 hover:shadow-2xl transition-shadow duration-300 ease-in-out border-gray-200 border-opacity-60 rounded-2xl overflow-hidden dark-mode-6">
               <div className="flex justify-center cursor-pointer">
                 <img

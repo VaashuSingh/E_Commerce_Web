@@ -46,7 +46,7 @@ function FilterSection() {
             </button>
           </div>
           <div>
-            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
               <div className="px-4 py-3 w-full rounded-md bg-gray-50 border-transparent outline-0 focus:border-gray-500 focus:bg-white focus:ring-0 text-sm dark-mode-5">
                 <Select
                   className="select dark:my-react-select-container"

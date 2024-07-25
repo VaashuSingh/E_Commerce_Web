@@ -163,7 +163,8 @@ const carouseldata = [
   },
   {
     image:
-      "https://galileo-masters.eu/wp-content/uploads/2018/04/ESNC-WebsiteHeader-Greek_2018-1920x576.jpg",
+      // "https://galileo-masters.eu/wp-content/uploads/2018/04/ESNC-WebsiteHeader-Greek_2018-1920x576.jpg",
+      "https://wallpaperaccess.com/full/12311.jpg",
     caption: "Darjeeling",
   },
 ];
