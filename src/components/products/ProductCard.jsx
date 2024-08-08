@@ -10,19 +10,18 @@ const ProductCard = () => {
               <div className="flex justify-center cursor-pointer">
                 <img
                   className=" rounded-2xl w-full h-72 p-2 hover:scale-110 transition-scale-110 duration-300 ease-in-out"
-                  //   src="https://dummyimage.com/720x400"
                   src={item.image}
                   alt="blog"
                 />
               </div>
               <div className="p-3 border-t-2">
-                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 light-mode-1">
+                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 text-light-mode-1">
                   E-Bharat
                 </h2>
-                <h1 className="title-font text-lg font-medium text-gray-900 mb-3 light-mode-1">
+                <h1 className="title-font text-lg font-medium text-gray-900 mb-3 text-light-mode-1">
                   {item.name}
                 </h1>
-                <p className="leading-relaxed mb-3 light-mode-1">
+                <p className="leading-relaxed mb-3 text-light-mode-1">
                   ₹{item.price}
                 </p>
                 <div className=" flex justify-center">

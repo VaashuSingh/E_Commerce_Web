@@ -52,14 +52,14 @@ const Navbar = () => {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <Link
                     to={"/allproducts"}
-                    className="text-sm font-medium text-gray-900 light-mode-1"
+                    className="text-sm font-medium text-gray-900 text-light-mode-1"
                   >
                     All Products
                   </Link>
                   <div className="flow-root">
                     <Link
                       to={"/order"}
-                      className="-m-2 block p-2 font-medium text-gray-900 light-mode-1"
+                      className="-m-2 block p-2 font-medium text-gray-900 text-light-mode-1"
                     >
                       Order
                     </Link>
@@ -68,14 +68,14 @@ const Navbar = () => {
                   <div className="flow-root">
                     <Link
                       to={"/dashboard"}
-                      className="-m-2 block p-2 font-medium text-gray-900 light-mode-1"
+                      className="-m-2 block p-2 font-medium text-gray-900 text-light-mode-1"
                     >
                       admin
                     </Link>
                   </div>
 
                   <div className="flow-root">
-                    <a className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer light-mode-1">
+                    <a className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer text-light-mode-1">
                       Logout
                     </a>
                   </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
                       alt=""
                       className="block h-auto w-5 flex-shrink-0"
                     />
-                    <span className="ml-3 block text-base font-medium text-gray-900 light-mode-1">
+                    <span className="ml-3 block text-base font-medium text-gray-900 text-light-mode-1">
                       INDIA
                     </span>
                     <span className="sr-only">, change currency</span>
@@ -139,7 +139,7 @@ const Navbar = () => {
               <div className="ml-4 flex lg:ml-0">
                 <Link to={"/"} className="flex">
                   <div className="flex ">
-                    <h1 className=" text-2xl font-bold text-black px-2 py-1 rounded light-mode-1">
+                    <h1 className=" text-2xl font-bold text-black px-2 py-1 rounded text-light-mode-1">
                       E-Bharat
                     </h1>
                   </div>
@@ -150,24 +150,24 @@ const Navbar = () => {
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                   <Link
                     to={"/allproducts"}
-                    className="text-sm font-medium text-gray-700 light-mode-1"
+                    className="text-sm font-medium text-gray-700 text-light-mode-1"
                   >
                     All Products
                   </Link>
                   <Link
                     to={"/order"}
-                    className="text-sm font-medium text-gray-700 light-mode-1"
+                    className="text-sm font-medium text-gray-700 text-light-mode-1"
                   >
                     Order
                   </Link>
                   <Link
                     to={"/dashboard"}
-                    className="text-sm font-medium text-gray-700 light-mode-1"
+                    className="text-sm font-medium text-gray-700 text-light-mode-1"
                   >
                     Admin
                   </Link>
 
-                  <a className="text-sm font-medium text-gray-700 cursor-pointer light-mode-1">
+                  <a className="text-sm font-medium text-gray-700 cursor-pointer text-light-mode-1">
                     Logout
                   </a>
                 </div>
@@ -179,7 +179,7 @@ const Navbar = () => {
                       alt=""
                       className="block h-auto w-5 flex-shrink-0"
                     />
-                    <span className="ml-3 block text-sm font-medium light-mode-1">
+                    <span className="ml-3 block text-sm font-medium text-light-mode-1">
                       INDIA
                     </span>
                   </a>
@@ -209,7 +209,7 @@ const Navbar = () => {
                 <div className="ml-4 flow-root lg:ml-6">
                   <Link
                     to={"/cart"}
-                    className="group -m-2 flex items-center p-2 light-mode-1"
+                    className="group -m-2 flex items-center p-2 text-light-mode-1"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -226,7 +226,7 @@ const Navbar = () => {
                       />
                     </svg>
 
-                    <span className="ml-2 text-sm font-medium text-gray-700 light-mode-1">
+                    <span className="ml-2 text-sm font-medium text-gray-700 text-light-mode-1">
                       0
                     </span>
                     <span className="sr-only">items in cart, view bag</span>

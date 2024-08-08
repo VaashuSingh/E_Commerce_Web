@@ -169,4 +169,54 @@ const carouseldata = [
   },
 ];
 
-export { filtersItems, filtersPrice, productsCardCollection, carouseldata };
+const track = [
+  {
+    icon: "M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z",
+    name: "Premium Tshirts",
+    description: "Our T-Shirts are 100% made of cotton.",
+  },
+  {
+    icon: "M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12",
+    name: "Free Shipping",
+    description: "We ship all over India for FREE.",
+  },
+  {
+    icon: "M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+    name: "Exciting Offers",
+    description: "We provide amazing offers & discounts",
+  },
+];
+const testimonial = [
+  {
+    image:
+      "https://imgs.search.brave.com/Flmvi3CK2pQFhKbJZSW6WDkKAlfb0rXzCZlDnralpYI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9iZWlu/Z3NlbGZpc2guaW4v/d3AtY29udGVudC91/cGxvYWRzLzIwMjMv/MDcvbWFoYWRldi1k/cDA1LmpwZw",
+    name: "Amit Katyal",
+    position: "Super Senior Software Developer | Team Leader",
+    description:
+      "Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.",
+  },
+  {
+    image:
+      "https://imgs.search.brave.com/FaYGxm5paN49WBe10VaHw7ulcvPk3Qt3FHH7UC4wFyw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9waG90/b3Nub3cub3JnL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzA0/L01haGFkZXYtcGlj/XzYuanBn",
+    name: "Shailendra Pandey",
+    position: "Senior Product Manager",
+    description:
+      "Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.",
+  },
+  {
+    image: "https://imgs.search.brave.com/kiTKttiGEFqml_yarfsTyL2ilQdfZOwp8EIHyTbzEaY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9waG90/b3Nub3cub3JnL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzA0/L2Z1bGwtaGQtbWFo/YWRldi1waWNfMTEu/anBn",
+    name: "Anil Yadav",
+    position: "CEO",
+    description:
+      "Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.",
+  },
+];
+
+export {
+  filtersItems,
+  filtersPrice,
+  productsCardCollection,
+  carouseldata,
+  track,
+  testimonial,
+};

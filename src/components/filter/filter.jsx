@@ -16,7 +16,7 @@ function FilterSection() {
   return (
     <div>
       <div className=" container mx-auto px-4 mt-5 ">
-        <div className="select p-5 rounded-lg bg-gray-100 drop-shadow-xl border border-gray-200 light-mode-1 dark-mode-4">
+        <div className="select p-5 rounded-lg bg-gray-100 drop-shadow-xl border border-gray-200 text-light-mode-1 dark-mode-4">
           <div className="relative">
             <div className="absolute flex items-center ml-2 h-full">
               <svg
@@ -33,13 +33,13 @@ function FilterSection() {
               name="searchkey"
               id="searchkey"
               placeholder="Search here"
-              className="px-8 py-3 w-full rounded-md bg-violet-0 border-transparent outline-0 text-sm light-mode-1 dark-mode-5"
+              className="px-8 py-3 w-full rounded-md bg-violet-0 border-transparent outline-0 text-sm text-light-mode-1 dark-mode-5"
             />
           </div>
           <div className="flex items-center justify-between mt-4">
             <p className="font-medium">Filters</p>
             <button
-              className="px-4 py-2 bg-gray-50hover:bg-gray-200 text-gray-800 text-sm font-medium rounded-md light-mode-1"
+              className="px-4 py-2 bg-gray-50hover:bg-gray-200 text-gray-800 text-sm font-medium rounded-md text-light-mode-1"
               onClick={resetfilters}
             >
               Reset Filter

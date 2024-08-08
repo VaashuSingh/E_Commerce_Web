@@ -1,8 +1,10 @@
 import FilterSection from "../../components/filter/filter";
 import Layout from "../../components/layout/Layout";
-import CollectionSection from "../../components/products/collsec";
+import ProductCollectionSection from "../../components/products/collsec";
 import HeroSection from "../../components/hero/HeroSection";
 import CarouselSection from "../../components/carousel/Carousel";
+import Track from "../../components/track/Track";
+import Testimonial from "../../components/testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -10,7 +12,9 @@ const Home = () => {
       <CarouselSection />
       {/* <HeroSection /> */}
       <FilterSection />
-      <CollectionSection />
+      <ProductCollectionSection />
+      <Track />
+      <Testimonial />
     </Layout>
   );
 };
