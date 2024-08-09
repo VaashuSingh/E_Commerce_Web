@@ -1,7 +1,7 @@
-import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
+// import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+function Footer() {
   return (
     <footer className="text-gray-600 body-font bg-gray-300 dark-mode-6 text-light-mode-1">
       <div className="container px-5 py-24 mx-auto">
@@ -174,3 +174,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;
