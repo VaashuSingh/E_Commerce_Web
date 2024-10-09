@@ -54,7 +54,7 @@ const Navbar = () => {
                     to={"/allproducts"}
                     className="text-sm font-medium text-gray-900 text-light-mode-1"
                   >
-                    All Products
+                    Products
                   </Link>
                   <div className="flow-root">
                     <Link
@@ -114,7 +114,7 @@ const Navbar = () => {
 
       {/* desktop  */}
       <header className="relative bg-white">
-        <p className="flex h-10 items-center justify-center bg-pink-600 px-4 text-sm text-white font-medium sm:px-6 lg:px-8 dark-mode-3">
+        <p className="flex h-10 items-center justify-center bg-blue hover:bg-pink px-4 text-sm text-white font-medium sm:px-6 lg:px-8 dark-mode-3">
           Get free delivery on orders over ₹300
         </p>
 
@@ -152,7 +152,7 @@ const Navbar = () => {
                     to={"/allproducts"}
                     className="text-sm font-medium text-gray-700 text-light-mode-1"
                   >
-                    All Products
+                    Products
                   </Link>
                   <Link
                     to={"/order"}

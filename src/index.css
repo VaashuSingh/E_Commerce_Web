@@ -9,6 +9,10 @@
   --text-color: black;
 }
 
+.bg-color{
+  --background-color: rgb(219 39 119);
+}
+
 .dark {
   --background-color: rgb(17, 24, 39);
   --text-color: white;

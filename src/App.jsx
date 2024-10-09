@@ -5,6 +5,8 @@ import Cart from "./pages/cart/Cart";
 import Admin from "./pages/admin/Admin";
 import { ThemeProvider } from "./context/theme/ThemeProvider";
 import AllProducts from "./components/products/allprod";
+import Login from "./pages/registration/Login";
+import Signup from "./pages/registration/Signup";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route exect path="/dashboard" element={<Admin />} />
           <Route exect path="/order" element={<Order />} />
           <Route exect path="/cart" element={<Cart />} />
+          <Route exect path="/login" element={<Login />} />
+          <Route exact path="/signup" element={<Signup />} />
         </Routes>
       </Router>
     </ThemeProvider>
