@@ -9,7 +9,7 @@ const ProductCard = () => {
             <div className="h-full border-2 hover:shadow-gray-100 hover:shadow-2xl transition-shadow duration-300 ease-in-out border-gray-200 border-opacity-60 rounded-2xl overflow-hidden dark-mode-6">
               <div className="flex justify-center cursor-pointer">
                 <img
-                  className=" rounded-2xl w-full h-72 p-2 hover:scale-110 transition-scale-110 duration-300 ease-in-out"
+                  className=" rounded-2xl w-full h-60 p-2 hover:scale-110 transition-scale-110 duration-300 ease-in-out"
                   //   src="https://dummyimage.com/720x400"
                   src={item.image}
                   alt="blog"
