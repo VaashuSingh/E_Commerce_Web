@@ -127,8 +127,8 @@ function Dashboard() {
             </div>
           </div>
         </div>
+        <DashboardTab />
       </section>
-      <DashboardTab />
     </Layout>
   );
 }

@@ -1,7 +1,7 @@
 import FilterSection from "../../components/filter/filter";
 import Layout from "../../components/layout/Layout";
 import ProductCollectionSection from "../../components/products/collsec";
-import HeroSection from "../../components/hero/HeroSection";
+// import HeroSection from "../../components/hero/HeroSection";
 import CarouselSection from "../../components/carousel/Carousel";
 import Track from "../../components/track/Track";
 import Testimonial from "../../components/testimonial/Testimonial";
@@ -21,6 +21,7 @@ const Home = () => {
   const deleteCart = () => {
     dispatch(deleteFromCart("shirt"));
   };
+
   return (
     <Layout>
       <div className="flex gap-5 justify-center">
